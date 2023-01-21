@@ -15,7 +15,7 @@
     transform: $efecto;
 }
 .logoRedes {
-    @include sizeLogoRedes(70px,70 ,5 ,5 , transform 1s )
+    @include sizeLogoRedes(50px,50 ,5 ,5 , transform 1s )
 }
 
 @mixin sizeImageMarcas ($width, $heigth){

@@ -1,0 +1,96 @@
+@import "./variables";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+@mixin sizeLogoRedes ($width, $heigt, $padding, $margin, $efecto) {
+    width: $heigt;
+    height: $heigt;
+    padding: $padding;
+    margin: $margin;
+    transform: $efecto;
+}
+.logoRedes {
+    @include sizeLogoRedes(80px,70 ,5 ,5 , transform 1s )
+}
+
+@mixin sizeImageMarcas ($width, $heigth){
+    width: $width;
+    height: $heigth;
+}
+.imagenesMarcas{
+    @include sizeImageMarcas(500px, 500px )
+}
+@mixin sizeLogoChupi ($width, $heigth, $efecto) {
+    width: $width;
+    height: $heigth;
+    transition: $efecto;
+}
+.logoChupi{
+    @include sizeLogoChupi(120px, 120px, transform 1s )
+  }
+
+.logoChupi:hover{
+    transform: scale(1.1)
+}
+.imagenFondo{
+    background-image: url("../assets/images/bebidas9.jpg");
+    height: 100vh;
+    width: 100%;
+}
+.fondoServicios{
+    background-color: none;
+    height: 100vh;
+    opacity:80%;
+}
+.fondoServicios{
+    background-color: none;
+    height: 100vh;
+    opacity:80%;
+}
+.accordion-button{
+    background-color: black;
+    color: white;
+}
+.logoRedes{
+    width: 70px;
+    height: 70px;
+    padding:5px;
+    margin: 5px;
+    transition: transform 1s;
+}
+.logoRedes:hover{
+   transform: scale(1.05) translateY(-20px)
+}
+.accordion-button{
+    background-color: black;
+    color: white;
+}
+.accordion-collapse{
+    background-color:black;
+    color: white;
+}
+.accordion-button:not(.collapsed){
+    background-color:black;
+    color: white;
+}
+.tracking-in-expand {
+	animation: tracking-in-expand 4s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s infinite both;
+}
+
+@keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  } 

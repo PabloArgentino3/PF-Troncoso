@@ -72,9 +72,14 @@
       opacity: 1;
     }
   }
+
 .btn{
     border-color: white;
 }  
 
+.imagenFlota{
+    width: 460px;
+    height: 360px;
+}
 
   
